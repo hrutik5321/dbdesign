@@ -306,4 +306,4 @@ Then enter your PostgreSQL connection details in the form.
 
 This is a personal / learning project structure.  
 You can adapt it freely for your own tools and experiments.
-# dbls
+# dbdesign
