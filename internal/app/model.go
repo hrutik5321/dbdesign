@@ -345,11 +345,11 @@ func (m Model) updateTablesKey(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	switch msg.String() {
 	case "ctrl+c", "esc", "q":
 		return m, tea.Quit
-	case "up":
+	case "up", "k":
 		if m.tableCursor > 0 {
 			m.tableCursor--
 		}
-	case "down":
+	case "down", "j":
 		if m.tableCursor < len(m.tableNames)-1 {
 			m.tableCursor++
 		}
